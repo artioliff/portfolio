@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Artioli | Front-End Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfólio de Artioli, Front-End Developer." />
+  <!-- Na Semana 2 vamos criar o styles.css -->
+  <link id="themeStylesheet" rel="stylesheet" href="styles-dark.css">
+</head>
+
+<body>
+  <!-- CONTAINER GERAL DA PÁGINA -->
+  <div class="page">
+
+    <!-- NAV SUPERIOR -->
+    <header class="topbar">
+      <div class="logo-area">
+        <span class="logo-mark">F</span>
+        <span class="logo-text">Artioli</span>
+      </div>
+
+      <nav class="main-nav">
+        <a href="#about">Sobre</a>
+        <a href="#experience">Experiência</a>
+        <a href="#skills">Tech Stack</a>
+        <a href="#projects">Projetos</a>
+        <a href="#education">Formação</a>
+        <a href="#contact">Contato</a>
+      </nav>
+
+      <div class="theme-switcher">
+        <button onclick="setTheme('dark')" class="theme-btn" data-theme="dark">Dark</button>
+        <button onclick="setTheme('light')" class="theme-btn" data-theme="light">Light</button>
+        <button onclick="setTheme('creative')" class="theme-btn" data-theme="creative">Creative</button>
+      </div>
+    </header>
+
+    <!-- ÁREA HERO (CABEÇALHO PRINCIPAL) -->
+    <section class="hero" id="top">
+      <div class="hero-left">
+        <p class="hero-label">Front-End Developer</p>
+        <h1 class="hero-title">Felipe Artioli</h1>
+        <p class="hero-subtitle">
+          Desenvolvedor focado em construir interfaces modernas, performáticas e bem estruturadas.
+          Expecializado em front-end moderno com HTML, CSS, JavaScript, React e Next.js.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn primary">Ver projetos</a>
+          <a href="#contact" class="btn secondary">Entrar em contato</a>
+        </div>
+
+        <div class="hero-tags">
+          <span>✔ Foco em front-end</span>
+          <span>✔ Estudo diário (1h)</span>
+          <span>✔ Em busca de vaga</span>
+        </div>
+      </div>
+
+      <div class="hero-right">
+        <!-- Futuramente você pode trocar por uma foto real -->
+        <div class="hero-avatar">
+          <img src="img/foto.jpg" alt="Foto de perfil">
+        </div>
+
+        <div class="hero-info-card">
+          <h2>Resumo rápido</h2>
+          <ul>
+            <li>Experiência prévia com C#, .NET e sistemas corporativos</li>
+            <li>Estudando front-end moderno em 2025</li>
+            <li>Buscando vaga como Front-End Developer</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO SOBRE -->
+    <section class="section" id="about">
+      <h2 class="section-title">Sobre mim</h2>
+      <p>
+        Sou o Felipe Artioli, desenvolvedor com experiência em back-end e sistemas corporativos, agora focado em <strong>Front-End Developer</strong> completo.
+        Este portfólio é ao mesmo tempo meu currículo online e meu projeto de estudos: cada parte dele representa uma etapa da minha evolução em HTML, CSS, JavaScript, React e Next.js.
+      </p>
+    </section>
+
+    <!-- SEÇÃO EXPERIÊNCIA -->
+    <section class="section" id="experience">
+        <h2 class="section-title">Experiência</h2>
+
+        <!-- EXPERIÊNCIA 1 -->
+        <article class="experience-item">
+            <h3>Programador de Sistemas Júnior</h3>
+            <p class="experience-company">SinergyTech — Bauru/SP</p>
+            <p class="experience-period">Out 2017 — Jan 2023 (5 anos e 4 meses)</p>
+            <ul>
+            <li>Desenvolvimento e manutenção de sistemas corporativos utilizando C#, .NET Framework e SQL Server.</li>
+            <li>Criação de APIs e integrações entre módulos internos da empresa.</li>
+            <li>Atendimento a demandas de melhorias, correções e novas funcionalidades.</li>
+            <li>Implementação de rotinas de automação, relatórios, regras de negócio e funcionalidades de back-office.</li>
+            <li>Suporte técnico e análise de problemas críticos envolvendo aplicações internas.</li>
+            </ul>
+        </article>
+
+        <!-- EXPERIÊNCIA 2 -->
+        <article class="experience-item">
+            <h3>Programador Júnior</h3>
+            <p class="experience-company">UPPERCASE Consultoria — Barra Bonita/SP</p>
+            <p class="experience-period">Fev 2016 — Out 2017 (1 ano e 9 meses)</p>
+            <ul>
+            <li>Desenvolvimento de aplicações web internas utilizando C#, ASP.NET e SQL.</li>
+            <li>Participação na análise de requisitos junto ao time de negócios.</li>
+            <li>Implementação de funcionalidades front-end básicas utilizando HTML, CSS e JavaScript.</li>
+            <li>Criação de consultas SQL, procedures e rotinas de banco de dados.</li>
+            <li>Suporte às equipes de implantação e sustentação.</li>
+            </ul>
+        </article>
+
+        <!-- EXPERIÊNCIA 3 -->
+        <article class="experience-item">
+            <h3>Analista Programador Jr. I</h3>
+            <p class="experience-company">Store Automação — Barra Bonita/SP</p>
+            <p class="experience-period">Set 2015 — Fev 2016 (6 meses)</p>
+            <ul>
+            <li>Desenvolvimento de módulos para sistemas de automação comercial e gestão de varejo.</li>
+            <li>Aprimoramento de telas, relatórios e processos back-end em C# e SQL Server.</li>
+            <li>Correção de bugs e melhorias de performance em processos críticos.</li>
+            <li>Atendimento interno a solicitações técnicas do time de suporte.</li>
+            </ul>
+        </article>
+
+        <!-- EXPERIÊNCIA 4 -->
+        <article class="experience-item">
+            <h3>Programador Trainee I</h3>
+            <p class="experience-company">G&P — Pederneiras/SP</p>
+            <p class="experience-period">Jan 2014 — Mar 2015 (1 ano e 3 meses)</p>
+            <ul>
+            <li>Atuação na manutenção e desenvolvimento de sistemas utilizando C# e SQL Server.</li>
+            <li>Suporte à equipe sênior no desenvolvimento de funcionalidades e correções.</li>
+            <li>Execução de tarefas envolvendo regras de negócio, manipulação de dados e telas internas.</li>
+            <li>Experiência inicial em versionamento, lógica de programação e práticas de desenvolvimento.</li>
+            </ul>
+        </article>
+
+        </section>
+
+    <!-- SEÇÃO TECH STACK / SKILLS -->
+    <section class="section" id="skills">
+      <h2 class="section-title">Tech Stack & Skills</h2>
+
+      <div class="skills-grid">
+        <div class="skills-group">
+          <h3>Front-End</h3>
+          <ul>
+            <li>HTML5</li>
+            <li>CSS3 (Flexbox, Grid, Responsivo)</li>
+            <li>JavaScript (ES6+)</li>
+            <li>React</li>
+            <li>Next.js</li>
+            <li>TypeScript</li>
+          </ul>
+        </div>
+
+        <div class="skills-group">
+          <h3>Back-End</h3>
+          <ul>
+            <li>C# / .NET</li>
+            <li>APIs REST</li>
+            <li>SQL Server / Oracle</li>
+          </ul>
+        </div>
+
+        <div class="skills-group">
+          <h3>Banco de Dados</h3>
+          <ul>
+            <li>SQL Server</li>
+            <li>Oracle</li>
+            <li>MySQL</li>
+            <li>Mongo DB</li>
+          </ul>
+        </div>
+
+        <div class="skills-group">
+          <h3>Ferramentas</h3>
+          <ul>
+            <li>Git & GitHub</li>
+            <li>VS Code</li>
+            <li>Postman</li>
+            <li>Cypress (testes E2E)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEÇÃO PROJETOS -->
+    <section class="section" id="projects">
+      <h2 class="section-title">Projetos</h2>
+      <p>
+        Os projetos abaixo serão construídos ao longo do meu plano de estudos. Conforme forem sendo concluídos,
+        cada card será atualizado com links para o código e para a versão online.
+      </p>
+
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>Mini E-commerce (HTML, CSS, JS)</h3>
+          <p>
+            Loja simples com listagem de produtos, carrinho e armazenamento local.
+            Projeto focado em fundamentos da tríade front-end.
+          </p>
+          <p class="project-status">Status: planejado</p>
+        </article>
+
+        <article class="project-card">
+          <h3>Dashboard de Estudos (React)</h3>
+          <p>
+            Aplicação em React para acompanhar evolução diária no plano de estudos,
+            registrando tecnologias estudadas e tempo investido.
+          </p>
+          <p class="project-status">Status: planejado</p>
+        </article>
+
+        <article class="project-card">
+          <h3>Portfólio em Next.js</h3>
+          <p>
+            Versão avançada deste portfólio, usando Next.js, rotas, SEO e deploy no Vercel.
+          </p>
+          <p class="project-status">Status: planejado</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- SEÇÃO FORMAÇÃO -->
+    <section class="section" id="education">
+        <h2 class="section-title">Formação & Cursos</h2>
+
+        <!-- Formação Acadêmica -->
+        <article class="education-item">
+            <h3>Formação Acadêmica</h3>
+            <ul>
+            <li>
+                <strong>Bacharelado em Sistemas de Informação (em andamento / integrado à experiência profissional)</strong><br>
+                Focado em desenvolvimento de software, estruturas de dados, arquitetura de sistemas, engenharia de software e bancos de dados.
+            </li>
+            </ul>
+        </article>
+
+        <!-- Formação Profissional -->
+        <article class="education-item">
+            <h3>Formação Profissional</h3>
+            <ul>
+            <li>
+                <strong>Experiência prática em empresas de tecnologia desde 2014</strong><br>
+                Atuação contínua no mercado com habilidade em C#, .NET Framework, SQL Server, integrações, APIs, manutenção e desenvolvimento de sistemas.
+            </li>
+            <li>
+                <strong>Mais de 10 anos de experiência acumulada em desenvolvimento de software</strong><br>
+                Passagem por diferentes níveis: Trainee, Júnior, Programador Jr. I e Programador de Sistemas Júnior.
+            </li>
+            </ul>
+        </article>
+
+        <!-- Transição para Front-End -->
+        <article class="education-item">
+            <h3>Especialização em Front-End (2025)</h3>
+            <ul>
+            <li>
+                <strong>Trilha Front-End Developer (Autodidata)</strong><br>
+                Estudo estruturado com foco em HTML5, CSS3, JavaScript Moderno, React, Next.js, TypeScript, Git e práticas profissionais de UI/UX.
+            </li>
+            <li>
+                <strong>Projetos práticos orientados a portfólio</strong><br>
+                Construção de aplicações web modernas como Mini E-commerce, Dashboard React, Portfólio Next.js e integração com APIs.
+            </li>
+            </ul>
+        </article>
+
+        <!-- Cursos Extras -->
+        <article class="education-item">
+            <h3>Cursos & Aprimoramentos</h3>
+            <ul>
+            <li><strong>JavaScript Moderno ES6+ —</strong> fundamentos, DOM, APIs, assíncrono, boas práticas.</li>
+            <li><strong>React para Iniciantes —</strong> componentes, estados, efeitos, hooks.</li>
+            <li><strong>Next.js —</strong> rotas, server components, API interna, SEO, deploy no Vercel.</li>
+            <li><strong>TypeScript —</strong> tipagem, interfaces, generics, TS no React.</li>
+            <li><strong>Fundamentos de UI/UX —</strong> princípios de design, usabilidade e acessibilidade.</li>
+            <li><strong>Git & GitHub —</strong> versionamento, branches, pull requests, GitHub Pages.</li>
+            <li><strong>Cypress —</strong> testes end-to-end para aplicações web.</li>
+            </ul>
+        </article>
+
+        </section>
+
+    <!-- SEÇÃO CONTATO -->
+    <section class="section" id="contact">
+      <h2 class="section-title">Contato</h2>
+      <p>Aberto para oportunidades como <strong>Front-End Developer</strong> remoto ou presencial.</p>
+
+      <div class="contact-grid">
+        <div class="contact-item">
+          <h3>Email</h3>
+          <a href="mailto:felipeartiolidefreitas@gmail.com">felipeartiolidefreitas@gmail.com</a>
+        </div>
+
+        <div class="contact-item">
+          <h3>LinkedIn</h3>
+          <a href="#" target="_blank" rel="noopener noreferrer">linkedin.com/in/artioliff</a>
+        </div>
+
+        <div class="contact-item">
+          <h3>GitHub</h3>
+          <a href="#" target="_blank" rel="noopener noreferrer">github.com/artioliff</a>
+        </div>
+
+        <div class="contact-item">
+          <h3>WhatsApp</h3>
+          <a href="#" target="_blank" rel="noopener noreferrer">+55 (14) 99719-7118</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+      <p>© <span id="year"></span> Felipe Artioli · Front-End Developer</p>
+    </footer>
+
+  </div>
+
+  <!-- Na Semana 3 vamos usar JavaScript aqui -->
+  <script>
+    // Só um detalhe simples: atualizar o ano automaticamente
+    const yearSpan = document.getElementById("year");
+    if (yearSpan) {
+      yearSpan.textContent = new Date().getFullYear();
+    }
+
+    function setTheme(theme) {
+        const link = document.getElementById("themeStylesheet");
+
+        if (theme === "dark")      link.href = "styles-dark.css";
+        if (theme === "light")     link.href = "styles-light.css";
+        if (theme === "creative")  link.href = "styles-creative.css";
+
+        // Salva o tema escolhido
+        localStorage.setItem("theme", theme);
+    }
+
+    // Carrega o último tema usado
+    const savedTheme = localStorage.getItem("theme");
+    if (savedTheme) {
+        document.getElementById("themeStylesheet").href = `styles-${savedTheme}.css`;
+    }
+  </script>
+</body>
+</html>
