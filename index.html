@@ -212,8 +212,8 @@
           </p>
           <p class="project-status done">Status: concluído</p>
           <div class="project-links">
-            <a href="https://github.com/artioliff/portfolio/" target="_blank" class="btn-link">Ver código</a>
-            <a href="https://artioliff.github.io/portfolio/" target="_blank" class="btn-link secondary">Ver online</a>
+            <a href="https://github.com/artioliff/portfolio/" target="_blank" class="btn primary">Ver código</a>
+            <a href="https://artioliff.github.io/portfolio/" target="_blank" class="btn secondary">Ver online</a>
           </div>
         </article>
 
@@ -226,8 +226,8 @@
           </p>
           <p class="project-status done">Status: concluído</p>
           <div class="project-links">
-            <a href="https://github.com/artioliff/to-do/" target="_blank" class="btn-link">Ver código</a>
-            <a href="https://artioliff.github.io/to-do/" target="_blank" class="btn-link secondary">Ver online</a>
+            <a href="https://github.com/artioliff/to-do/" target="_blank" class="btn primary">Ver código</a>
+            <a href="https://artioliff.github.io/to-do/" target="_blank" class="btn secondary">Ver online</a>
           </div>
         </article>
 
@@ -240,8 +240,8 @@
           </p>
           <p class="project-status done">Status: concluído</p>
           <div class="project-links">
-            <a href="https://github.com/artioliff/dashboard/" target="_blank" class="btn-link">Ver código</a>
-            <a href="https://artioliff.github.io/dashboard/" target="_blank" class="btn-link secondary">Ver online</a>
+            <a href="https://github.com/artioliff/dashboard/" target="_blank" class="btn primary">Ver código</a>
+            <a href="https://artioliff.github.io/dashboard/" target="_blank" class="btn secondary">Ver online</a>
           </div>
         </article>
 
@@ -254,8 +254,8 @@
           </p>
           <p class="project-status done">Status: concluído</p>
           <div class="project-links">
-            <a href="https://github.com/artioliff/kanban/" target="_blank" class="btn-link">Ver código</a>
-            <a href="https://artioliff.github.io/kanban/" target="_blank" class="btn-link secondary">Ver online</a>
+            <a href="https://github.com/artioliff/kanban/" target="_blank" class="btn primary">Ver código</a>
+            <a href="https://artioliff.github.io/kanban/" target="_blank" class="btn secondary">Ver online</a>
           </div>
         </article>
 
@@ -268,8 +268,8 @@
           </p>
           <p class="project-status done">Status: concluído</p>
           <div class="project-links">
-            <a href="https://github.com/artioliff/pomodoro/" target="_blank" class="btn-link">Ver código</a>
-            <a href="https://artioliff.github.io/pomodoro/" target="_blank" class="btn-link secondary">Ver online</a>
+            <a href="https://github.com/artioliff/pomodoro/" target="_blank" class="btn primary">Ver código</a>
+            <a href="https://artioliff.github.io/pomodoro/" target="_blank" class="btn secondary">Ver online</a>
           </div>
         </article>
 
@@ -411,30 +411,6 @@
 
   </div>
 
-  <!-- Na Semana 3 vamos usar JavaScript aqui -->
-  <script>
-    // Só um detalhe simples: atualizar o ano automaticamente
-    const yearSpan = document.getElementById("year");
-    if (yearSpan) {
-      yearSpan.textContent = new Date().getFullYear();
-    }
-
-    function setTheme(theme) {
-        const link = document.getElementById("themeStylesheet");
-
-        if (theme === "dark")      link.href = "css/styles-dark.css";
-        if (theme === "light")     link.href = "css/styles-light.css";
-        if (theme === "creative")  link.href = "css/styles-creative.css";
-
-        // Salva o tema escolhido
-        localStorage.setItem("theme", theme);
-    }
-
-    // Carrega o último tema usado
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme) {
-        document.getElementById("themeStylesheet").href = `styles-${savedTheme}.css`;
-    }
-  </script>
+  <script src="js/script.js"></script>
 </body>
 </html>

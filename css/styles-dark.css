@@ -450,10 +450,52 @@ ul {
 }
 
 .project-links {
+  margin-top: .75rem;
   display: flex;
   flex-wrap: wrap;
   gap: .5rem;
-  margin-top: .6rem;
+}
+
+.project-btn {
+  font-size: .8rem;
+  padding: .45rem .9rem;
+  border-radius: 999px;
+  border: 1px solid #334155;
+  text-decoration: none;
+  color: #e5e7eb;
+  background: #0f172a;
+  transition: .15s;
+}
+
+.project-btn:hover {
+  background: #1e293b;
+  transform: translateY(-1px);
+}
+
+.project-btn.ghost {
+  background: transparent;
+  color: #cbd5f5;
+}
+
+.project-btn.ghost:hover {
+  background: rgba(148,163,184,0.15);
+}
+
+.project-status {
+  font-weight: 600;
+  font-size: .85rem;
+  margin-top: .4rem;
+  color: #a1a1aa;
+  text-transform: uppercase;
+  letter-spacing: .04em;
+}
+
+.project-status.done {
+  color: #22c55e;
+}
+
+.project-status.progress {
+  color: #eab308;
 }
 
 .btn-link {
