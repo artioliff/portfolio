@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Portfólio de Artioli, Front-End Developer." />
   <!-- Na Semana 2 vamos criar o styles.css -->
-  <link id="themeStylesheet" rel="stylesheet" href="styles-dark.css">
+  <link id="themeStylesheet" rel="stylesheet" href="css/styles-dark.css">
 </head>
 
 <body>
@@ -196,20 +196,104 @@
     <section class="section" id="projects">
       <h2 class="section-title">Projetos</h2>
       <p>
-        Os projetos abaixo serão construídos ao longo do meu plano de estudos. Conforme forem sendo concluídos,
-        cada card será atualizado com links para o código e para a versão online.
+        Abaixo está a lista dos projetos que venho desenvolvendo no meu plano de estudos.
+        Conforme novos projetos forem finalizados, os cards serão atualizados com links
+        para o código e para a versão online.
       </p>
 
       <div class="projects-grid">
+
+        <!-- Portfólio -->
         <article class="project-card">
-          <h3>Mini E-commerce (HTML, CSS, JS)</h3>
+          <h3>Portfólio Profissional</h3>
           <p>
-            Loja simples com listagem de produtos, carrinho e armazenamento local.
-            Projeto focado em fundamentos da tríade front-end.
+            Site pessoal completo com HTML, CSS e JS. Inclui múltiplos temas, seção de habilidades,
+            experiência profissional e currículo online estilizado.
+          </p>
+          <p class="project-status done">Status: concluído</p>
+          <div class="project-links">
+            <a href="https://github.com/artioliff/portfolio/" target="_blank" class="btn-link">Ver código</a>
+            <a href="https://artioliff.github.io/portfolio/" target="_blank" class="btn-link secondary">Ver online</a>
+          </div>
+        </article>
+
+        <!-- To-Do Notion Premium -->
+        <article class="project-card">
+          <h3>To-Do Notion Premium</h3>
+          <p>
+            Lista de tarefas minimalista com filtros, agrupamento por datas, dashboard
+            de produtividade e temas dinâmicos.
+          </p>
+          <p class="project-status done">Status: concluído</p>
+          <div class="project-links">
+            <a href="https://github.com/artioliff/to-do/" target="_blank" class="btn-link">Ver código</a>
+            <a href="https://artioliff.github.io/to-do/" target="_blank" class="btn-link secondary">Ver online</a>
+          </div>
+        </article>
+
+        <!-- Dashboard Ultramoderno -->
+        <article class="project-card">
+          <h3>Dashboard Ultramoderno</h3>
+          <p>
+            Dashboard de analytics com gráficos, KPIs, tabela dinâmica, export CSV, temas
+            e layout profissional estilo enterprise.
+          </p>
+          <p class="project-status done">Status: concluído</p>
+          <div class="project-links">
+            <a href="https://github.com/artioliff/dashboard/" target="_blank" class="btn-link">Ver código</a>
+            <a href="https://artioliff.github.io/dashboard/" target="_blank" class="btn-link secondary">Ver online</a>
+          </div>
+        </article>
+
+        <!-- Kanban Board Premium -->
+        <article class="project-card">
+          <h3>Kanban Board Premium</h3>
+          <p>
+            Sistema Kanban completo com drag & drop, modal de edição, filtros, tags,
+            mobile first e design premium inspirado no Trello/Notion.
+          </p>
+          <p class="project-status done">Status: concluído</p>
+          <div class="project-links">
+            <a href="https://github.com/artioliff/kanban/" target="_blank" class="btn-link">Ver código</a>
+            <a href="https://artioliff.github.io/kanban/" target="_blank" class="btn-link secondary">Ver online</a>
+          </div>
+        </article>
+
+        <!-- Pomodoro Ultramoderno -->
+        <article class="project-card">
+          <h3>Pomodoro Ultramoderno (PWA)</h3>
+          <p>
+            Timer Pomodoro com histórico inteligente, estatísticas, PWA instalável,
+            som de conclusão e tema dinâmico.
+          </p>
+          <p class="project-status done">Status: concluído</p>
+          <div class="project-links">
+            <a href="https://github.com/artioliff/pomodoro/" target="_blank" class="btn-link">Ver código</a>
+            <a href="https://artioliff.github.io/pomodoro/" target="_blank" class="btn-link secondary">Ver online</a>
+          </div>
+        </article>
+
+        <!-- Dashboard Financeiro -->
+        <article class="project-card">
+          <h3>Dashboard Financeiro 2.0</h3>
+          <p>
+            Dashboard avançado com filtros, troca de moeda, KPIs automáticos, gráficos,
+            tabela de transações e exportação.
+          </p>
+          <p class="project-status progress">Status: em andamento</p>
+        </article>
+
+        <!-- Mini E-commerce -->
+        <article class="project-card">
+          <h3>Mini E-commerce</h3>
+          <p>
+            Loja simples com listagem de produtos, carrinho e armazenamento local. Focado
+            em fundamentos da tríade front-end.
           </p>
           <p class="project-status">Status: planejado</p>
         </article>
 
+        <!-- Dashboard de Estudos -->
         <article class="project-card">
           <h3>Dashboard de Estudos (React)</h3>
           <p>
@@ -219,13 +303,15 @@
           <p class="project-status">Status: planejado</p>
         </article>
 
+        <!-- Portfólio Next.js -->
         <article class="project-card">
           <h3>Portfólio em Next.js</h3>
           <p>
-            Versão avançada deste portfólio, usando Next.js, rotas, SEO e deploy no Vercel.
+            Versão avançada deste portfólio usando Next.js, rotas, SEO aprimorado e deploy no Vercel.
           </p>
           <p class="project-status">Status: planejado</p>
         </article>
+
       </div>
     </section>
 
@@ -336,9 +422,9 @@
     function setTheme(theme) {
         const link = document.getElementById("themeStylesheet");
 
-        if (theme === "dark")      link.href = "styles-dark.css";
-        if (theme === "light")     link.href = "styles-light.css";
-        if (theme === "creative")  link.href = "styles-creative.css";
+        if (theme === "dark")      link.href = "css/styles-dark.css";
+        if (theme === "light")     link.href = "css/styles-light.css";
+        if (theme === "creative")  link.href = "css/styles-creative.css";
 
         // Salva o tema escolhido
         localStorage.setItem("theme", theme);
