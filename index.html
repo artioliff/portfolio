@@ -1,354 +1,1215 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8" />
-  <title>Artioli | Front-End Developer</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Portfólio de Artioli, Front-End Developer." />
-  <!-- Na Semana 2 vamos criar o styles.css -->
-  <link id="themeStylesheet" rel="stylesheet" href="styles-dark.css">
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Artioli | Front-End Developer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Portfólio de Artioli, Front-End Developer." />
+    <!-- Na Semana 2 vamos criar o styles.css -->
+    <link rel="stylesheet" href="css/header.css" />
+    <link id="themeStylesheet" rel="stylesheet" href="css/styles-dark.css" />
+  </head>
+  <body>
+    <!-- DARK (seu layout atual) -->
+    <div class="theme theme-dark">
+      <!-- TUDO QUE VOCÊ JÁ TEM HOJE fica aqui dentro -->
+      <!-- CONTAINER GERAL DA PÁGINA -->
+      <div class="page">
+        <header class="global-header">
+          <div class="gh-left">
+            <div class="gh-logo">F</div>
+            <div class="gh-name">
+              <strong>Felipe Artioli</strong>
+              <span>Front-End Developer</span>
+            </div>
+          </div>
 
-<body>
-  <!-- CONTAINER GERAL DA PÁGINA -->
-  <div class="page">
+          <nav class="gh-nav">
+            <a href="#about">Sobre</a>
+            <a href="#projects">Projetos</a>
+            <a href="#experience">Experiência</a>
+            <a href="#contact">Contato</a>
+          </nav>
 
-    <!-- NAV SUPERIOR -->
-    <header class="topbar">
-      <div class="logo-area">
-        <span class="logo-mark">F</span>
-        <span class="logo-text">Artioli</span>
-      </div>
+          <div class="gh-right">
+            <div class="theme-switcher" data-theme-switcher>
+              <button type="button" onclick="setTheme('dark')" class="theme-btn" data-theme="dark">Dark</button>
+              <button type="button" onclick="setTheme('clean')" class="theme-btn" data-theme="clean">Clean</button>
+              <button type="button" onclick="setTheme('creative')" class="theme-btn" data-theme="creative">
+                Creative
+              </button>
+            </div>
+          </div>
+        </header>
 
-      <nav class="main-nav">
-        <a href="#about">Sobre</a>
-        <a href="#experience">Experiência</a>
-        <a href="#skills">Tech Stack</a>
-        <a href="#projects">Projetos</a>
-        <a href="#education">Formação</a>
-        <a href="#contact">Contato</a>
-      </nav>
+        <!-- ÁREA HERO (CABEÇALHO PRINCIPAL) -->
+        <section class="hero" id="top">
+          <div class="hero-left">
+            <p class="hero-label">Front-End Developer</p>
+            <h1 class="hero-title">Felipe Artioli</h1>
+            <p class="hero-subtitle">
+              Desenvolvedor focado em construir interfaces modernas, performáticas e bem estruturadas. Expecializado em
+              front-end moderno com HTML, CSS, JavaScript, React e Next.js.
+            </p>
 
-      <div class="theme-switcher">
-        <button onclick="setTheme('dark')" class="theme-btn" data-theme="dark">Dark</button>
-        <button onclick="setTheme('light')" class="theme-btn" data-theme="light">Light</button>
-        <button onclick="setTheme('creative')" class="theme-btn" data-theme="creative">Creative</button>
-      </div>
-    </header>
+            <div class="hero-actions">
+              <a href="#projects" class="btn primary">Ver projetos</a>
+              <a href="#contact" class="btn secondary">Entrar em contato</a>
+            </div>
 
-    <!-- ÁREA HERO (CABEÇALHO PRINCIPAL) -->
-    <section class="hero" id="top">
-      <div class="hero-left">
-        <p class="hero-label">Front-End Developer</p>
-        <h1 class="hero-title">Felipe Artioli</h1>
-        <p class="hero-subtitle">
-          Desenvolvedor focado em construir interfaces modernas, performáticas e bem estruturadas.
-          Expecializado em front-end moderno com HTML, CSS, JavaScript, React e Next.js.
-        </p>
+            <div class="hero-tags">
+              <span>✔ Foco em front-end</span>
+              <span>✔ Estudo diário (1h)</span>
+              <span>✔ Em busca de vaga</span>
+            </div>
+          </div>
 
-        <div class="hero-actions">
-          <a href="#projects" class="btn primary">Ver projetos</a>
-          <a href="#contact" class="btn secondary">Entrar em contato</a>
-        </div>
+          <div class="hero-right">
+            <!-- Futuramente você pode trocar por uma foto real -->
+            <div class="hero-avatar">
+              <img src="img/foto.jpg" alt="Foto de perfil" />
+            </div>
 
-        <div class="hero-tags">
-          <span>✔ Foco em front-end</span>
-          <span>✔ Estudo diário (1h)</span>
-          <span>✔ Em busca de vaga</span>
-        </div>
-      </div>
+            <div class="hero-info-card">
+              <h2>Resumo rápido</h2>
+              <ul>
+                <li>Experiência prévia com C#, .NET e sistemas corporativos</li>
+                <li>Estudando front-end moderno em 2025</li>
+                <li>Buscando vaga como Front-End Developer</li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
-      <div class="hero-right">
-        <!-- Futuramente você pode trocar por uma foto real -->
-        <div class="hero-avatar">
-          <img src="img/foto.jpg" alt="Foto de perfil">
-        </div>
+        <!-- SEÇÃO SOBRE -->
+        <section class="section" id="about">
+          <h2 class="section-title">Sobre mim</h2>
+          <p>
+            Sou o Felipe Artioli, desenvolvedor com experiência em back-end e sistemas corporativos, agora focado em
+            <strong>Front-End Developer</strong> completo. Este portfólio é ao mesmo tempo meu currículo online e meu
+            projeto de estudos: cada parte dele representa uma etapa da minha evolução em HTML, CSS, JavaScript, React e
+            Next.js.
+          </p>
+        </section>
 
-        <div class="hero-info-card">
-          <h2>Resumo rápido</h2>
-          <ul>
-            <li>Experiência prévia com C#, .NET e sistemas corporativos</li>
-            <li>Estudando front-end moderno em 2025</li>
-            <li>Buscando vaga como Front-End Developer</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+        <!-- SEÇÃO EXPERIÊNCIA -->
+        <section class="section" id="experience">
+          <h2 class="section-title">Experiência</h2>
 
-    <!-- SEÇÃO SOBRE -->
-    <section class="section" id="about">
-      <h2 class="section-title">Sobre mim</h2>
-      <p>
-        Sou o Felipe Artioli, desenvolvedor com experiência em back-end e sistemas corporativos, agora focado em <strong>Front-End Developer</strong> completo.
-        Este portfólio é ao mesmo tempo meu currículo online e meu projeto de estudos: cada parte dele representa uma etapa da minha evolução em HTML, CSS, JavaScript, React e Next.js.
-      </p>
-    </section>
-
-    <!-- SEÇÃO EXPERIÊNCIA -->
-    <section class="section" id="experience">
-        <h2 class="section-title">Experiência</h2>
-
-        <!-- EXPERIÊNCIA 1 -->
-        <article class="experience-item">
+          <!-- EXPERIÊNCIA 1 -->
+          <article class="experience-item">
             <h3>Programador de Sistemas Júnior</h3>
             <p class="experience-company">SinergyTech — Bauru/SP</p>
             <p class="experience-period">Out 2017 — Jan 2023 (5 anos e 4 meses)</p>
             <ul>
-            <li>Desenvolvimento e manutenção de sistemas corporativos utilizando C#, .NET Framework e SQL Server.</li>
-            <li>Criação de APIs e integrações entre módulos internos da empresa.</li>
-            <li>Atendimento a demandas de melhorias, correções e novas funcionalidades.</li>
-            <li>Implementação de rotinas de automação, relatórios, regras de negócio e funcionalidades de back-office.</li>
-            <li>Suporte técnico e análise de problemas críticos envolvendo aplicações internas.</li>
+              <li>Desenvolvimento e manutenção de sistemas corporativos utilizando C#, .NET Framework e SQL Server.</li>
+              <li>Criação de APIs e integrações entre módulos internos da empresa.</li>
+              <li>Atendimento a demandas de melhorias, correções e novas funcionalidades.</li>
+              <li>
+                Implementação de rotinas de automação, relatórios, regras de negócio e funcionalidades de back-office.
+              </li>
+              <li>Suporte técnico e análise de problemas críticos envolvendo aplicações internas.</li>
             </ul>
-        </article>
+          </article>
 
-        <!-- EXPERIÊNCIA 2 -->
-        <article class="experience-item">
+          <!-- EXPERIÊNCIA 2 -->
+          <article class="experience-item">
             <h3>Programador Júnior</h3>
             <p class="experience-company">UPPERCASE Consultoria — Barra Bonita/SP</p>
             <p class="experience-period">Fev 2016 — Out 2017 (1 ano e 9 meses)</p>
             <ul>
-            <li>Desenvolvimento de aplicações web internas utilizando C#, ASP.NET e SQL.</li>
-            <li>Participação na análise de requisitos junto ao time de negócios.</li>
-            <li>Implementação de funcionalidades front-end básicas utilizando HTML, CSS e JavaScript.</li>
-            <li>Criação de consultas SQL, procedures e rotinas de banco de dados.</li>
-            <li>Suporte às equipes de implantação e sustentação.</li>
+              <li>Desenvolvimento de aplicações web internas utilizando C#, ASP.NET e SQL.</li>
+              <li>Participação na análise de requisitos junto ao time de negócios.</li>
+              <li>Implementação de funcionalidades front-end básicas utilizando HTML, CSS e JavaScript.</li>
+              <li>Criação de consultas SQL, procedures e rotinas de banco de dados.</li>
+              <li>Suporte às equipes de implantação e sustentação.</li>
             </ul>
-        </article>
+          </article>
 
-        <!-- EXPERIÊNCIA 3 -->
-        <article class="experience-item">
+          <!-- EXPERIÊNCIA 3 -->
+          <article class="experience-item">
             <h3>Analista Programador Jr. I</h3>
             <p class="experience-company">Store Automação — Barra Bonita/SP</p>
             <p class="experience-period">Set 2015 — Fev 2016 (6 meses)</p>
             <ul>
-            <li>Desenvolvimento de módulos para sistemas de automação comercial e gestão de varejo.</li>
-            <li>Aprimoramento de telas, relatórios e processos back-end em C# e SQL Server.</li>
-            <li>Correção de bugs e melhorias de performance em processos críticos.</li>
-            <li>Atendimento interno a solicitações técnicas do time de suporte.</li>
+              <li>Desenvolvimento de módulos para sistemas de automação comercial e gestão de varejo.</li>
+              <li>Aprimoramento de telas, relatórios e processos back-end em C# e SQL Server.</li>
+              <li>Correção de bugs e melhorias de performance em processos críticos.</li>
+              <li>Atendimento interno a solicitações técnicas do time de suporte.</li>
             </ul>
-        </article>
+          </article>
 
-        <!-- EXPERIÊNCIA 4 -->
-        <article class="experience-item">
+          <!-- EXPERIÊNCIA 4 -->
+          <article class="experience-item">
             <h3>Programador Trainee I</h3>
             <p class="experience-company">G&P — Pederneiras/SP</p>
             <p class="experience-period">Jan 2014 — Mar 2015 (1 ano e 3 meses)</p>
             <ul>
-            <li>Atuação na manutenção e desenvolvimento de sistemas utilizando C# e SQL Server.</li>
-            <li>Suporte à equipe sênior no desenvolvimento de funcionalidades e correções.</li>
-            <li>Execução de tarefas envolvendo regras de negócio, manipulação de dados e telas internas.</li>
-            <li>Experiência inicial em versionamento, lógica de programação e práticas de desenvolvimento.</li>
+              <li>Atuação na manutenção e desenvolvimento de sistemas utilizando C# e SQL Server.</li>
+              <li>Suporte à equipe sênior no desenvolvimento de funcionalidades e correções.</li>
+              <li>Execução de tarefas envolvendo regras de negócio, manipulação de dados e telas internas.</li>
+              <li>Experiência inicial em versionamento, lógica de programação e práticas de desenvolvimento.</li>
             </ul>
-        </article>
-
+          </article>
         </section>
 
-    <!-- SEÇÃO TECH STACK / SKILLS -->
-    <section class="section" id="skills">
-      <h2 class="section-title">Tech Stack & Skills</h2>
+        <!-- SEÇÃO TECH STACK / SKILLS -->
+        <section class="section" id="skills">
+          <h2 class="section-title">Tech Stack & Skills</h2>
 
-      <div class="skills-grid">
-        <div class="skills-group">
-          <h3>Front-End</h3>
-          <ul>
-            <li>HTML5</li>
-            <li>CSS3 (Flexbox, Grid, Responsivo)</li>
-            <li>JavaScript (ES6+)</li>
-            <li>React</li>
-            <li>Next.js</li>
-            <li>TypeScript</li>
-          </ul>
-        </div>
+          <div class="skills-grid">
+            <div class="skills-group">
+              <h3>Front-End</h3>
+              <ul>
+                <li>HTML5</li>
+                <li>CSS3 (Flexbox, Grid, Responsivo)</li>
+                <li>JavaScript (ES6+)</li>
+                <li>React</li>
+                <li>Next.js</li>
+                <li>TypeScript</li>
+              </ul>
+            </div>
 
-        <div class="skills-group">
-          <h3>Back-End</h3>
-          <ul>
-            <li>C# / .NET</li>
-            <li>APIs REST</li>
-            <li>SQL Server / Oracle</li>
-          </ul>
-        </div>
+            <div class="skills-group">
+              <h3>Back-End</h3>
+              <ul>
+                <li>C# / .NET</li>
+                <li>APIs REST</li>
+                <li>SQL Server / Oracle</li>
+              </ul>
+            </div>
 
-        <div class="skills-group">
-          <h3>Banco de Dados</h3>
-          <ul>
-            <li>SQL Server</li>
-            <li>Oracle</li>
-            <li>MySQL</li>
-            <li>Mongo DB</li>
-          </ul>
-        </div>
+            <div class="skills-group">
+              <h3>Banco de Dados</h3>
+              <ul>
+                <li>SQL Server</li>
+                <li>Oracle</li>
+                <li>MySQL</li>
+                <li>Mongo DB</li>
+              </ul>
+            </div>
 
-        <div class="skills-group">
-          <h3>Ferramentas</h3>
-          <ul>
-            <li>Git & GitHub</li>
-            <li>VS Code</li>
-            <li>Postman</li>
-            <li>Cypress (testes E2E)</li>
-          </ul>
-        </div>
-      </div>
-    </section>
+            <div class="skills-group">
+              <h3>Ferramentas</h3>
+              <ul>
+                <li>Git & GitHub</li>
+                <li>VS Code</li>
+                <li>Postman</li>
+                <li>Cypress (testes E2E)</li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
-    <!-- SEÇÃO PROJETOS -->
-    <section class="section" id="projects">
-      <h2 class="section-title">Projetos</h2>
-      <p>
-        Os projetos abaixo serão construídos ao longo do meu plano de estudos. Conforme forem sendo concluídos,
-        cada card será atualizado com links para o código e para a versão online.
-      </p>
-
-      <div class="projects-grid">
-        <article class="project-card">
-          <h3>Mini E-commerce (HTML, CSS, JS)</h3>
+        <!-- SEÇÃO PROJETOS -->
+        <section class="section" id="projects">
+          <h2 class="section-title">Projetos</h2>
           <p>
-            Loja simples com listagem de produtos, carrinho e armazenamento local.
-            Projeto focado em fundamentos da tríade front-end.
+            Abaixo está a lista dos projetos que venho desenvolvendo no meu plano de estudos. Conforme novos projetos
+            forem finalizados, os cards serão atualizados com links para o código e para a versão online.
           </p>
-          <p class="project-status">Status: planejado</p>
-        </article>
 
-        <article class="project-card">
-          <h3>Dashboard de Estudos (React)</h3>
-          <p>
-            Aplicação em React para acompanhar evolução diária no plano de estudos,
-            registrando tecnologias estudadas e tempo investido.
-          </p>
-          <p class="project-status">Status: planejado</p>
-        </article>
+          <div class="projects-grid">
+            <!-- Portfólio -->
+            <article class="project-card">
+              <h3>Portfólio Profissional</h3>
+              <p>
+                Site pessoal completo com HTML, CSS e JS. Inclui múltiplos temas, seção de habilidades, experiência
+                profissional e currículo online estilizado.
+              </p>
+              <p class="project-status done">Status: concluído</p>
+              <div class="project-links">
+                <a href="https://github.com/artioliff/portfolio/" target="_blank" class="btn-link">Ver código</a>
+                <a href="https://artioliff.github.io/portfolio/" target="_blank" class="btn-link secondary"
+                  >Ver online</a
+                >
+              </div>
+            </article>
 
-        <article class="project-card">
-          <h3>Portfólio em Next.js</h3>
-          <p>
-            Versão avançada deste portfólio, usando Next.js, rotas, SEO e deploy no Vercel.
-          </p>
-          <p class="project-status">Status: planejado</p>
-        </article>
-      </div>
-    </section>
+            <!-- To-Do Notion Premium -->
+            <article class="project-card">
+              <h3>To-Do Notion Premium</h3>
+              <p>
+                Lista de tarefas minimalista com filtros, agrupamento por datas, dashboard de produtividade e temas
+                dinâmicos.
+              </p>
+              <p class="project-status done">Status: concluído</p>
+              <div class="project-links">
+                <a href="https://github.com/artioliff/to-do/" target="_blank" class="btn-link">Ver código</a>
+                <a href="https://artioliff.github.io/to-do/" target="_blank" class="btn-link secondary">Ver online</a>
+              </div>
+            </article>
 
-    <!-- SEÇÃO FORMAÇÃO -->
-    <section class="section" id="education">
-        <h2 class="section-title">Formação & Cursos</h2>
+            <!-- Dashboard Ultramoderno -->
+            <article class="project-card">
+              <h3>Dashboard Ultramoderno</h3>
+              <p>
+                Dashboard de analytics com gráficos, KPIs, tabela dinâmica, export CSV, temas e layout profissional
+                estilo enterprise.
+              </p>
+              <p class="project-status done">Status: concluído</p>
+              <div class="project-links">
+                <a href="https://github.com/artioliff/dashboard/" target="_blank" class="btn-link">Ver código</a>
+                <a href="https://artioliff.github.io/dashboard/" target="_blank" class="btn-link secondary"
+                  >Ver online</a
+                >
+              </div>
+            </article>
 
-        <!-- Formação Acadêmica -->
-        <article class="education-item">
+            <!-- Kanban Board Premium -->
+            <article class="project-card">
+              <h3>Kanban Board Premium</h3>
+              <p>
+                Sistema Kanban completo com drag & drop, modal de edição, filtros, tags, mobile first e design premium
+                inspirado no Trello/Notion.
+              </p>
+              <p class="project-status done">Status: concluído</p>
+              <div class="project-links">
+                <a href="https://github.com/artioliff/kanban/" target="_blank" class="btn-link">Ver código</a>
+                <a href="https://artioliff.github.io/kanban/" target="_blank" class="btn-link secondary">Ver online</a>
+              </div>
+            </article>
+
+            <!-- Pomodoro Ultramoderno -->
+            <article class="project-card">
+              <h3>Pomodoro Ultramoderno (PWA)</h3>
+              <p>
+                Timer Pomodoro com histórico inteligente, estatísticas, PWA instalável, som de conclusão e tema
+                dinâmico.
+              </p>
+              <p class="project-status done">Status: concluído</p>
+              <div class="project-links">
+                <a href="https://github.com/artioliff/pomodoro/" target="_blank" class="btn-link">Ver código</a>
+                <a href="https://artioliff.github.io/pomodoro/" target="_blank" class="btn-link secondary"
+                  >Ver online</a
+                >
+              </div>
+            </article>
+
+            <!-- Dashboard Financeiro -->
+            <article class="project-card">
+              <h3>Dashboard Financeiro 2.0</h3>
+              <p>
+                Dashboard avançado com filtros, troca de moeda, KPIs automáticos, gráficos, tabela de transações e
+                exportação.
+              </p>
+              <p class="project-status progress">Status: em andamento</p>
+            </article>
+
+            <!-- Mini E-commerce -->
+            <article class="project-card">
+              <h3>Mini E-commerce</h3>
+              <p>
+                Loja simples com listagem de produtos, carrinho e armazenamento local. Focado em fundamentos da tríade
+                front-end.
+              </p>
+              <p class="project-status">Status: planejado</p>
+            </article>
+
+            <!-- Dashboard de Estudos -->
+            <article class="project-card">
+              <h3>Dashboard de Estudos (React)</h3>
+              <p>
+                Aplicação em React para acompanhar evolução diária no plano de estudos, registrando tecnologias
+                estudadas e tempo investido.
+              </p>
+              <p class="project-status">Status: planejado</p>
+            </article>
+
+            <!-- Portfólio Next.js -->
+            <article class="project-card">
+              <h3>Portfólio em Next.js</h3>
+              <p>Versão avançada deste portfólio usando Next.js, rotas, SEO aprimorado e deploy no Vercel.</p>
+              <p class="project-status">Status: planejado</p>
+            </article>
+          </div>
+        </section>
+
+        <!-- SEÇÃO FORMAÇÃO -->
+        <section class="section" id="education">
+          <h2 class="section-title">Formação & Cursos</h2>
+
+          <!-- Formação Acadêmica -->
+          <article class="education-item">
             <h3>Formação Acadêmica</h3>
             <ul>
-            <li>
-                <strong>Bacharelado em Sistemas de Informação (em andamento / integrado à experiência profissional)</strong><br>
-                Focado em desenvolvimento de software, estruturas de dados, arquitetura de sistemas, engenharia de software e bancos de dados.
-            </li>
+              <li>
+                <strong
+                  >Bacharelado em Sistemas de Informação (em andamento / integrado à experiência profissional)</strong
+                ><br />
+                Focado em desenvolvimento de software, estruturas de dados, arquitetura de sistemas, engenharia de
+                software e bancos de dados.
+              </li>
             </ul>
-        </article>
+          </article>
 
-        <!-- Formação Profissional -->
-        <article class="education-item">
+          <!-- Formação Profissional -->
+          <article class="education-item">
             <h3>Formação Profissional</h3>
             <ul>
-            <li>
-                <strong>Experiência prática em empresas de tecnologia desde 2014</strong><br>
-                Atuação contínua no mercado com habilidade em C#, .NET Framework, SQL Server, integrações, APIs, manutenção e desenvolvimento de sistemas.
-            </li>
-            <li>
-                <strong>Mais de 10 anos de experiência acumulada em desenvolvimento de software</strong><br>
+              <li>
+                <strong>Experiência prática em empresas de tecnologia desde 2014</strong><br />
+                Atuação contínua no mercado com habilidade em C#, .NET Framework, SQL Server, integrações, APIs,
+                manutenção e desenvolvimento de sistemas.
+              </li>
+              <li>
+                <strong>Mais de 10 anos de experiência acumulada em desenvolvimento de software</strong><br />
                 Passagem por diferentes níveis: Trainee, Júnior, Programador Jr. I e Programador de Sistemas Júnior.
-            </li>
+              </li>
             </ul>
-        </article>
+          </article>
 
-        <!-- Transição para Front-End -->
-        <article class="education-item">
+          <!-- Transição para Front-End -->
+          <article class="education-item">
             <h3>Especialização em Front-End (2025)</h3>
             <ul>
-            <li>
-                <strong>Trilha Front-End Developer (Autodidata)</strong><br>
-                Estudo estruturado com foco em HTML5, CSS3, JavaScript Moderno, React, Next.js, TypeScript, Git e práticas profissionais de UI/UX.
-            </li>
-            <li>
-                <strong>Projetos práticos orientados a portfólio</strong><br>
-                Construção de aplicações web modernas como Mini E-commerce, Dashboard React, Portfólio Next.js e integração com APIs.
-            </li>
+              <li>
+                <strong>Trilha Front-End Developer (Autodidata)</strong><br />
+                Estudo estruturado com foco em HTML5, CSS3, JavaScript Moderno, React, Next.js, TypeScript, Git e
+                práticas profissionais de UI/UX.
+              </li>
+              <li>
+                <strong>Projetos práticos orientados a portfólio</strong><br />
+                Construção de aplicações web modernas como Mini E-commerce, Dashboard React, Portfólio Next.js e
+                integração com APIs.
+              </li>
             </ul>
-        </article>
+          </article>
 
-        <!-- Cursos Extras -->
-        <article class="education-item">
+          <!-- Cursos Extras -->
+          <article class="education-item">
             <h3>Cursos & Aprimoramentos</h3>
             <ul>
-            <li><strong>JavaScript Moderno ES6+ —</strong> fundamentos, DOM, APIs, assíncrono, boas práticas.</li>
-            <li><strong>React para Iniciantes —</strong> componentes, estados, efeitos, hooks.</li>
-            <li><strong>Next.js —</strong> rotas, server components, API interna, SEO, deploy no Vercel.</li>
-            <li><strong>TypeScript —</strong> tipagem, interfaces, generics, TS no React.</li>
-            <li><strong>Fundamentos de UI/UX —</strong> princípios de design, usabilidade e acessibilidade.</li>
-            <li><strong>Git & GitHub —</strong> versionamento, branches, pull requests, GitHub Pages.</li>
-            <li><strong>Cypress —</strong> testes end-to-end para aplicações web.</li>
+              <li><strong>JavaScript Moderno ES6+ —</strong> fundamentos, DOM, APIs, assíncrono, boas práticas.</li>
+              <li><strong>React para Iniciantes —</strong> componentes, estados, efeitos, hooks.</li>
+              <li><strong>Next.js —</strong> rotas, server components, API interna, SEO, deploy no Vercel.</li>
+              <li><strong>TypeScript —</strong> tipagem, interfaces, generics, TS no React.</li>
+              <li><strong>Fundamentos de UI/UX —</strong> princípios de design, usabilidade e acessibilidade.</li>
+              <li><strong>Git & GitHub —</strong> versionamento, branches, pull requests, GitHub Pages.</li>
+              <li><strong>Cypress —</strong> testes end-to-end para aplicações web.</li>
             </ul>
-        </article>
-
+          </article>
         </section>
 
-    <!-- SEÇÃO CONTATO -->
-    <section class="section" id="contact">
-      <h2 class="section-title">Contato</h2>
-      <p>Aberto para oportunidades como <strong>Front-End Developer</strong> remoto ou presencial.</p>
+        <!-- SEÇÃO CONTATO -->
+        <section class="section" id="contact">
+          <h2 class="section-title">Contato</h2>
+          <p>Aberto para oportunidades como <strong>Front-End Developer</strong> remoto ou presencial.</p>
 
-      <div class="contact-grid">
-        <div class="contact-item">
-          <h3>Email</h3>
-          <a href="mailto:felipeartiolidefreitas@gmail.com">felipeartiolidefreitas@gmail.com</a>
-        </div>
+          <div class="contact-grid">
+            <div class="contact-item">
+              <h3>Email</h3>
+              <a href="mailto:felipeartiolidefreitas@gmail.com">felipeartiolidefreitas@gmail.com</a>
+            </div>
 
-        <div class="contact-item">
-          <h3>LinkedIn</h3>
-          <a href="#" target="_blank" rel="noopener noreferrer">linkedin.com/in/artioliff</a>
-        </div>
+            <div class="contact-item">
+              <h3>LinkedIn</h3>
+              <a href="#" target="_blank" rel="noopener noreferrer">linkedin.com/in/artioliff</a>
+            </div>
 
-        <div class="contact-item">
-          <h3>GitHub</h3>
-          <a href="#" target="_blank" rel="noopener noreferrer">github.com/artioliff</a>
-        </div>
+            <div class="contact-item">
+              <h3>GitHub</h3>
+              <a href="#" target="_blank" rel="noopener noreferrer">github.com/artioliff</a>
+            </div>
 
-        <div class="contact-item">
-          <h3>WhatsApp</h3>
-          <a href="#" target="_blank" rel="noopener noreferrer">+55 (14) 99719-7118</a>
+            <div class="contact-item">
+              <h3>WhatsApp</h3>
+              <a href="#" target="_blank" rel="noopener noreferrer">+55 (14) 99719-7118</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- RODAPÉ -->
+        <footer class="footer">
+          <p>© <span id="year"></span> Felipe Artioli · Front-End Developer</p>
+        </footer>
+      </div>
+    </div>
+
+    <!-- CLEAN (novo layout preto e branco) -->
+    <div class="theme theme-clean">
+      <div class="clean-page">
+        <header class="global-header">
+          <div class="gh-left">
+            <div class="gh-logo">F</div>
+            <div class="gh-name">
+              <strong>Felipe Artioli</strong>
+              <span>Front-End Developer</span>
+            </div>
+          </div>
+
+          <nav class="gh-nav">
+            <a href="#about">Sobre</a>
+            <a href="#projects">Projetos</a>
+            <a href="#experience">Experiência</a>
+            <a href="#contact">Contato</a>
+          </nav>
+
+          <div class="gh-right">
+            <div class="theme-switcher" data-theme-switcher>
+              <button type="button" onclick="setTheme('dark')" class="theme-btn" data-theme="dark">Dark</button>
+              <button type="button" onclick="setTheme('clean')" class="theme-btn" data-theme="clean">Clean</button>
+              <button type="button" onclick="setTheme('creative')" class="theme-btn" data-theme="creative">
+                Creative
+              </button>
+            </div>
+          </div>
+        </header>
+
+
+        <main class="clean-main">
+          <!-- HERO editorial -->
+          <section class="clean-hero" id="cl-sobre">
+            <div class="clean-hero-left">
+              <p class="clean-kicker">A Senior-ish UI dev vibe, mas com sua identidade</p>
+              <h1 class="clean-title">
+                Desenvolvedor Front-End <span class="clean-muted">com base forte em sistemas</span>
+              </h1>
+              <p class="clean-lead">
+                Sou Felipe Artioli. Venho de experiência com C#/.NET e sistemas corporativos e hoje estou focado em
+                construir interfaces modernas, performáticas e bem estruturadas com HTML, CSS, JavaScript, React e
+                Next.js.
+              </p>
+
+              <div class="clean-cta">
+                <a class="clean-btn clean-btn-solid" href="#cl-projetos">Ver projetos</a>
+                <a class="clean-btn clean-btn-outline" href="#cl-contato">Falar comigo</a>
+              </div>
+
+              <div class="clean-stats">
+                <div class="clean-stat">
+                  <div class="clean-stat-number">10+</div>
+                  <div class="clean-stat-label">anos com software</div>
+                </div>
+                <div class="clean-stat">
+                  <div class="clean-stat-number">5</div>
+                  <div class="clean-stat-label">projetos concluídos</div>
+                </div>
+                <div class="clean-stat">
+                  <div class="clean-stat-number">HTML/CSS/JS</div>
+                  <div class="clean-stat-label">base forte</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="clean-hero-right">
+              <div class="clean-photo">
+                <img src="img/foto.jpg" alt="Foto de Felipe Artioli" />
+              </div>
+
+              <div class="clean-card clean-card-note">
+                <h3>Inquisitivo e apaixonado por aprender</h3>
+                <p>
+                  Esse portfólio é também meu laboratório: cada seção e projeto representa uma etapa real da minha
+                  evolução no front-end moderno.
+                </p>
+                <div class="clean-mini-links">
+                  <a href="mailto:felipeartiolidefreitas@gmail.com">Email</a>
+                  <span>•</span>
+                  <a href="https://github.com/artioliff" target="_blank" rel="noopener noreferrer">GitHub</a>
+                  <span>•</span>
+                  <a href="https://linkedin.com/in/artioliff" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <!-- “Logos” / Skills quick grid -->
+          <section class="clean-strip">
+            <div class="clean-strip-title">Foco atual</div>
+            <div class="clean-pill-grid">
+              <div class="clean-pill">React</div>
+              <div class="clean-pill">Next.js</div>
+              <div class="clean-pill">TypeScript</div>
+              <div class="clean-pill">Tailwind (quando aplicável)</div>
+              <div class="clean-pill">UX/UI</div>
+              <div class="clean-pill">APIs REST</div>
+              <div class="clean-pill">Cypress</div>
+              <div class="clean-pill">Git/GitHub</div>
+            </div>
+          </section>
+
+          <!-- Selected projects -->
+          <section class="clean-section" id="cl-projetos">
+            <div class="clean-section-head">
+              <h2>Selected projects</h2>
+              <p>Projetos que eu construí para portfólio, focando UI, organização e experiência do usuário.</p>
+            </div>
+
+            <div class="clean-projects">
+              <article class="clean-project">
+                <div class="clean-project-info">
+                  <h3>Portfólio Profissional</h3>
+                  <p>Site pessoal com HTML, CSS e JS. Múltiplos temas e currículo online.</p>
+                  <div class="clean-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                  <div class="clean-links">
+                    <a href="https://github.com/artioliff/portfolio/" target="_blank" rel="noopener noreferrer"
+                      >Código</a
+                    >
+                    <a href="https://artioliff.github.io/portfolio/" target="_blank" rel="noopener noreferrer"
+                      >Online</a
+                    >
+                  </div>
+                </div>
+                <div class="clean-project-thumb">
+                  <div class="thumb-skeleton"></div>
+                </div>
+              </article>
+
+              <article class="clean-project">
+                <div class="clean-project-info">
+                  <h3>To-Do Notion Premium</h3>
+                  <p>Lista de tarefas minimalista com filtros, datas e dashboard.</p>
+                  <div class="clean-tags"><span>HTML</span><span>CSS</span><span>JS</span></div>
+                  <div class="clean-links">
+                    <a href="https://github.com/artioliff/to-do/" target="_blank" rel="noopener noreferrer">Código</a>
+                    <a href="https://artioliff.github.io/to-do/" target="_blank" rel="noopener noreferrer">Online</a>
+                  </div>
+                </div>
+                <div class="clean-project-thumb">
+                  <div class="thumb-skeleton"></div>
+                </div>
+              </article>
+
+              <article class="clean-project">
+                <div class="clean-project-info">
+                  <h3>Dashboard Ultramoderno</h3>
+                  <p>KPIs, gráficos, tabela dinâmica e exportação CSV.</p>
+                  <div class="clean-tags"><span>UI</span><span>JS</span><span>Charts</span></div>
+                  <div class="clean-links">
+                    <a href="https://github.com/artioliff/dashboard/" target="_blank" rel="noopener noreferrer"
+                      >Código</a
+                    >
+                    <a href="https://artioliff.github.io/dashboard/" target="_blank" rel="noopener noreferrer"
+                      >Online</a
+                    >
+                  </div>
+                </div>
+                <div class="clean-project-thumb">
+                  <div class="thumb-skeleton"></div>
+                </div>
+              </article>
+
+              <article class="clean-project">
+                <div class="clean-project-info">
+                  <h3>Kanban Board Premium</h3>
+                  <p>Drag & drop, modal de edição, filtros, tags e mobile-first.</p>
+                  <div class="clean-tags"><span>UX</span><span>JS</span><span>DnD</span></div>
+                  <div class="clean-links">
+                    <a href="https://github.com/artioliff/kanban/" target="_blank" rel="noopener noreferrer">Código</a>
+                    <a href="https://artioliff.github.io/kanban/" target="_blank" rel="noopener noreferrer">Online</a>
+                  </div>
+                </div>
+                <div class="clean-project-thumb">
+                  <div class="thumb-skeleton"></div>
+                </div>
+              </article>
+
+              <article class="clean-project">
+                <div class="clean-project-info">
+                  <h3>Pomodoro Ultramoderno (PWA)</h3>
+                  <p>Histórico inteligente, estatísticas, PWA instalável e tema.</p>
+                  <div class="clean-tags"><span>PWA</span><span>JS</span><span>UI</span></div>
+                  <div class="clean-links">
+                    <a href="https://github.com/artioliff/pomodoro/" target="_blank" rel="noopener noreferrer"
+                      >Código</a
+                    >
+                    <a href="https://artioliff.github.io/pomodoro/" target="_blank" rel="noopener noreferrer">Online</a>
+                  </div>
+                </div>
+                <div class="clean-project-thumb">
+                  <div class="thumb-skeleton"></div>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <!-- Experiência (estilo editorial / cards) -->
+          <section class="clean-section" id="cl-Experiência">
+            <div class="clean-section-head">
+              <h2>Experience</h2>
+              <p>Experiência prática em empresas de tecnologia desde 2014.</p>
+            </div>
+
+            <div class="clean-exp">
+              <article class="clean-exp-item">
+                <div class="clean-exp-date">Out 2017 — Jan 2023</div>
+                <div class="clean-exp-body">
+                  <h3>Programador de Sistemas Júnior</h3>
+                  <div class="clean-exp-company">SinergyTech — Bauru/SP</div>
+                  <ul>
+                    <li>C#, .NET Framework e SQL Server em sistemas corporativos.</li>
+                    <li>APIs e integrações entre módulos internos.</li>
+                    <li>Melhorias, correções e novas funcionalidades.</li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="clean-exp-item">
+                <div class="clean-exp-date">Fev 2016 — Out 2017</div>
+                <div class="clean-exp-body">
+                  <h3>Programador Júnior</h3>
+                  <div class="clean-exp-company">UPPERCASE Consultoria — Barra Bonita/SP</div>
+                  <ul>
+                    <li>Aplicações web internas com C#, ASP.NET e SQL.</li>
+                    <li>Front-end com HTML/CSS/JS para rotinas específicas.</li>
+                    <li>Procedures e rotinas de banco.</li>
+                  </ul>
+                </div>
+              </article>
+
+              <article class="clean-exp-item">
+                <div class="clean-exp-date">Jan 2014 — Mar 2015</div>
+                <div class="clean-exp-body">
+                  <h3>Programador Trainee I</h3>
+                  <div class="clean-exp-company">G&P — Pederneiras/SP</div>
+                  <ul>
+                    <li>Manutenção e desenvolvimento com C# e SQL Server.</li>
+                    <li>Suporte à equipe sênior e evolução de funcionalidades.</li>
+                  </ul>
+                </div>
+              </article>
+            </div>
+          </section>
+
+          <!-- Stack I use -->
+          <section class="clean-section" id="cl-stack">
+            <div class="clean-section-head">
+              <h2>Stack I use</h2>
+              <p>Uma visão rápida e “limpa” do que você usa no dia a dia.</p>
+            </div>
+
+            <div class="clean-stack">
+              <div class="clean-stack-col">
+                <h3>Front-end</h3>
+                <div class="clean-chip-row">
+                  <span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>TypeScript</span> <span>React</span
+                  ><span>Next.js</span>
+                </div>
+              </div>
+
+              <div class="clean-stack-col">
+                <h3>Back-end & Dados</h3>
+                <div class="clean-chip-row">
+                  <span>C#</span><span>.NET</span><span>SQL Server</span><span>Oracle</span><span>APIs REST</span>
+                </div>
+              </div>
+
+              <div class="clean-stack-col">
+                <h3>Ferramentas</h3>
+                <div class="clean-chip-row">
+                  <span>Git/GitHub</span><span>VS Code</span><span>Postman</span><span>Cypress</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="clean-quote">
+              <p>
+                “Meu objetivo é unir a disciplina de sistemas corporativos com uma UI moderna, consistente e bem feita.”
+              </p>
+              <div class="clean-quote-author">— Felipe Artioli</div>
+            </div>
+          </section>
+
+          <!-- Contato -->
+          <section class="clean-section" id="cl-contato">
+            <div class="clean-section-head">
+              <h2>Contato</h2>
+              <p>Aberto para oportunidades como Front-End Developer (remoto ou presencial).</p>
+            </div>
+
+            <div class="clean-contact">
+              <a class="clean-contact-card" href="mailto:felipeartiolidefreitas@gmail.com">
+                <div class="k">Email</div>
+                <div class="v">felipeartiolidefreitas@gmail.com</div>
+              </a>
+
+              <a
+                class="clean-contact-card"
+                href="https://linkedin.com/in/artioliff"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="k">LinkedIn</div>
+                <div class="v">linkedin.com/in/artioliff</div>
+              </a>
+
+              <a
+                class="clean-contact-card"
+                href="https://github.com/artioliff"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="k">GitHub</div>
+                <div class="v">github.com/artioliff</div>
+              </a>
+
+              <a class="clean-contact-card" href="#" target="_blank" rel="noopener noreferrer">
+                <div class="k">WhatsApp</div>
+                <div class="v">+55 (14) 99719-7118</div>
+              </a>
+            </div>
+
+            <footer class="clean-footer">
+              <span>© <span id="year3"></span> Felipe Artioli</span>
+              <span class="sep">•</span>
+              <span>Clean layout (P&B, CSS puro)</span>
+            </footer>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <!-- CREATIVE (novo layout) -->
+    <div class="theme theme-creative">
+      <div class="creative-page">
+        <header class="global-header">
+          <div class="gh-left">
+            <div class="gh-logo">F</div>
+            <div class="gh-name">
+              <strong>Felipe Artioli</strong>
+              <span>Front-End Developer</span>
+            </div>
+          </div>
+
+          <nav class="gh-nav">
+            <a href="#about">Sobre</a>
+            <a href="#projects">Projetos</a>
+            <a href="#experience">Experiência</a>
+            <a href="#contact">Contato</a>
+          </nav>
+
+          <div class="gh-right">
+            <div class="theme-switcher" data-theme-switcher>
+              <button type="button" onclick="setTheme('dark')" class="theme-btn" data-theme="dark">Dark</button>
+              <button type="button" onclick="setTheme('clean')" class="theme-btn" data-theme="clean">Clean</button>
+              <button type="button" onclick="setTheme('creative')" class="theme-btn" data-theme="creative">
+                Creative
+              </button>
+            </div>
+          </div>
+        </header>
+        <div class="creative-card">
+          <aside class="creative-side">
+              <div class="creative-photo">
+                <img src="img/foto.jpg" alt="Foto de Felipe Artioli" />
+                <div class="creative-photo-overlay"></div>
+                <div class="creative-photo-text">
+                  <div class="creative-kicker">Portfólio</div>
+                  <div class="creative-name">Felipe Artioli</div>
+                  <div class="creative-role">Desenvolvedor Front-End • React • Next.js</div>
+                </div>
+              </div>
+
+              <nav class="creative-nav">
+                <a href="#c-sobre">Sobre</a>
+                <a href="#c-Experiência">Experiência</a>
+                <a href="#c-skills">Tech Stack</a>
+                <a href="#c-projetos">Projetos</a>
+                <a href="#c-formacao">Formação</a>
+                <a href="#c-contato">Contato</a>
+              </nav>
+
+              <section class="creative-box">
+                <h3 class="creative-box-title">Formação</h3>
+                <div class="creative-rule"></div>
+
+                <div class="creative-list">
+                  <div class="creative-item">
+                    <div class="creative-item-title">Sistemas de Informação</div>
+                    <div class="creative-item-sub">Bacharelado (em andamento)</div>
+                    <div class="creative-item-meta">Foco em software • dados • arquitetura</div>
+                  </div>
+
+                  <div class="creative-item">
+                    <div class="creative-item-title">Especialização Front-End</div>
+                    <div class="creative-item-sub">Trilha Autodidata (2025)</div>
+                    <div class="creative-item-meta">HTML • CSS • JS • React • Next • TS</div>
+                  </div>
+                </div>
+              </section>
+
+              <section class="creative-box">
+                <h3 class="creative-box-title">Contato</h3>
+                <div class="creative-rule"></div>
+
+                <div class="creative-contact">
+                  <div class="creative-contact-row">
+                    <div class="creative-accent"></div>
+                    <div>
+                      <div class="creative-contact-label">Email</div>
+                      <a class="creative-contact-value" href="mailto:felipeartiolidefreitas@gmail.com">
+                        felipeartiolidefreitas@gmail.com
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="creative-contact-row">
+                    <div class="creative-accent"></div>
+                    <div>
+                      <div class="creative-contact-label">LinkedIn</div>
+                      <a
+                        class="creative-contact-value"
+                        href="https://linkedin.com/in/artioliff"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        linkedin.com/in/artioliff
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="creative-contact-row">
+                    <div class="creative-accent"></div>
+                    <div>
+                      <div class="creative-contact-label">GitHub</div>
+                      <a
+                        class="creative-contact-value"
+                        href="https://github.com/artioliff"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                      >
+                        github.com/artioliff
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="creative-contact-row">
+                    <div class="creative-accent"></div>
+                    <div>
+                      <div class="creative-contact-label">WhatsApp</div>
+                      <a class="creative-contact-value" href="#" target="_blank" rel="noopener noreferrer">
+                        +55 (14) 99719-7118
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="creative-links">
+                  <a href="https://github.com/artioliff" target="_blank" rel="noopener noreferrer">GitHub</a>
+                  <a href="https://linkedin.com/in/artioliff" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                  <a href="#c-contato">Contato</a>
+                </div>
+              </section>
+            </aside>
+
+            <section class="creative-main">
+              <header class="creative-hero">
+                <div>
+                  <h2 class="creative-hero-title">Felipe <span>Artioli</span></h2>
+                  <p class="creative-hero-subtitle">
+                    Desenvolvedor Front-End | React | Next | JavaScript/TypeScript | UX/UI
+                  </p>
+                </div>
+                <div class="creative-hero-right">
+                  <div class="creative-availability">Disponível para remoto</div>
+                  <div class="creative-availability-sub">Projetos & freelas • CLT/PJ</div>
+                </div>
+              </header>
+
+              <div class="creative-content">
+                <section class="creative-section" id="c-sobre">
+                  <div class="creative-section-head">
+                    <h3>Sobre mim</h3>
+                    <div class="creative-line"></div>
+                  </div>
+                  <p>
+                    Desenvolvedor focado em construir interfaces modernas, performáticas e bem estruturadas. Experiência
+                    com React, Next.js, consumo de APIs e boas práticas de componentização. Também venho de base com
+                    C#/.NET e sistemas corporativos, o que ajuda na visão de produto e integrações.
+                  </p>
+
+                  <div class="creative-chips">
+                    <span>React</span><span>Next.js</span><span>HTML</span><span>CSS</span><span>JavaScript</span
+                    ><span>TypeScript</span>
+                  </div>
+                </section>
+
+                <section class="creative-section" id="c-Experiência">
+                  <div class="creative-section-head">
+                    <h3>Experiência</h3>
+                    <div class="creative-line"></div>
+                  </div>
+
+                  <div class="creative-timeline">
+                    <article class="creative-job">
+                      <div class="creative-job-date">Out 2017 — Jan 2023</div>
+                      <div class="creative-job-body">
+                        <h4>Programador de Sistemas Júnior</h4>
+                        <div class="creative-job-company">SinergyTech — Bauru/SP</div>
+                        <ul>
+                          <li>
+                            Desenvolvimento e manutenção de sistemas corporativos com C#, .NET Framework e SQL Server.
+                          </li>
+                          <li>Criação de APIs e integrações entre módulos internos.</li>
+                          <li>Melhorias, correções e novas funcionalidades.</li>
+                        </ul>
+                      </div>
+                    </article>
+
+                    <article class="creative-job">
+                      <div class="creative-job-date">Fev 2016 — Out 2017</div>
+                      <div class="creative-job-body">
+                        <h4>Programador Júnior</h4>
+                        <div class="creative-job-company">UPPERCASE Consultoria — Barra Bonita/SP</div>
+                        <ul>
+                          <li>Aplicações web internas usando C#, ASP.NET e SQL.</li>
+                          <li>Implementações front-end básicas com HTML, CSS e JavaScript.</li>
+                          <li>Procedures, consultas e rotinas de banco.</li>
+                        </ul>
+                      </div>
+                    </article>
+
+                    <article class="creative-job">
+                      <div class="creative-job-date">Set 2015 — Fev 2016</div>
+                      <div class="creative-job-body">
+                        <h4>Analista Programador Jr. I</h4>
+                        <div class="creative-job-company">Store Automação — Barra Bonita/SP</div>
+                        <ul>
+                          <li>Desenvolvimento de módulos para automação comercial e gestão.</li>
+                          <li>Aprimoramento de telas, relatórios e processos em C# e SQL.</li>
+                        </ul>
+                      </div>
+                    </article>
+
+                    <article class="creative-job">
+                      <div class="creative-job-date">Jan 2014 — Mar 2015</div>
+                      <div class="creative-job-body">
+                        <h4>Programador Trainee I</h4>
+                        <div class="creative-job-company">G&P — Pederneiras/SP</div>
+                        <ul>
+                          <li>Manutenção e desenvolvimento de sistemas usando C# e SQL Server.</li>
+                          <li>Suporte à equipe sênior e evolução de funcionalidades.</li>
+                        </ul>
+                      </div>
+                    </article>
+                  </div>
+                </section>
+
+                <section class="creative-section" id="c-skills">
+                  <div class="creative-section-head">
+                    <h3>Tech Stack & Skills</h3>
+                    <div class="creative-line"></div>
+                  </div>
+
+                  <div class="creative-skills">
+                    <div class="creative-skill">
+                      <div class="creative-skill-top"><strong>Front-End</strong><span>Foco</span></div>
+                      <div class="creative-bar"><i style="width: 90%"></i></div>
+                      <p>HTML5 • CSS3 • JS (ES6+) • React • Next.js • TypeScript</p>
+                    </div>
+
+                    <div class="creative-skill">
+                      <div class="creative-skill-top"><strong>Back-End</strong><span>Base</span></div>
+                      <div class="creative-bar"><i style="width: 70%"></i></div>
+                      <p>C#/.NET • APIs REST • SQL Server/Oracle</p>
+                    </div>
+
+                    <div class="creative-skill">
+                      <div class="creative-skill-top"><strong>Banco</strong><span>Dados</span></div>
+                      <div class="creative-bar"><i style="width: 65%"></i></div>
+                      <p>SQL Server • Oracle • MySQL • MongoDB</p>
+                    </div>
+
+                    <div class="creative-skill">
+                      <div class="creative-skill-top"><strong>Ferramentas</strong><span>Fluxo</span></div>
+                      <div class="creative-bar"><i style="width: 75%"></i></div>
+                      <p>Git/GitHub • VS Code • Postman • Cypress</p>
+                    </div>
+                  </div>
+                </section>
+
+                <section class="creative-section" id="c-projetos">
+                  <div class="creative-section-head">
+                    <h3>Projetos</h3>
+                    <div class="creative-line"></div>
+                  </div>
+
+                  <div class="creative-projects">
+                    <article class="creative-project">
+                      <h4>Portfólio Profissional</h4>
+                      <p>Site pessoal com HTML, CSS e JS. Múltiplos temas e currículo online.</p>
+                      <div class="creative-badges">
+                        <span class="done">Concluído</span>
+                        <a href="https://github.com/artioliff/portfolio/" target="_blank" rel="noopener noreferrer"
+                          >Código</a
+                        >
+                        <a href="https://artioliff.github.io/portfolio/" target="_blank" rel="noopener noreferrer"
+                          >Online</a
+                        >
+                      </div>
+                    </article>
+
+                    <article class="creative-project">
+                      <h4>To-Do Notion Premium</h4>
+                      <p>Lista de tarefas com filtros, agrupamento por datas e dashboard.</p>
+                      <div class="creative-badges">
+                        <span class="done">Concluído</span>
+                        <a href="https://github.com/artioliff/to-do/" target="_blank" rel="noopener noreferrer"
+                          >Código</a
+                        >
+                        <a href="https://artioliff.github.io/to-do/" target="_blank" rel="noopener noreferrer"
+                          >Online</a
+                        >
+                      </div>
+                    </article>
+
+                    <article class="creative-project">
+                      <h4>Dashboard Ultramoderno</h4>
+                      <p>Analytics com KPIs, gráficos, tabela e exportação.</p>
+                      <div class="creative-badges">
+                        <span class="done">Concluído</span>
+                        <a href="https://github.com/artioliff/dashboard/" target="_blank" rel="noopener noreferrer"
+                          >Código</a
+                        >
+                        <a href="https://artioliff.github.io/dashboard/" target="_blank" rel="noopener noreferrer"
+                          >Online</a
+                        >
+                      </div>
+                    </article>
+
+                    <article class="creative-project">
+                      <h4>Kanban Board Premium</h4>
+                      <p>Kanban com drag & drop, modal, filtros e tags.</p>
+                      <div class="creative-badges">
+                        <span class="done">Concluído</span>
+                        <a href="https://github.com/artioliff/kanban/" target="_blank" rel="noopener noreferrer"
+                          >Código</a
+                        >
+                        <a href="https://artioliff.github.io/kanban/" target="_blank" rel="noopener noreferrer"
+                          >Online</a
+                        >
+                      </div>
+                    </article>
+
+                    <article class="creative-project">
+                      <h4>Pomodoro Ultramoderno (PWA)</h4>
+                      <p>Pomodoro com histórico, estatísticas, PWA e tema.</p>
+                      <div class="creative-badges">
+                        <span class="done">Concluído</span>
+                        <a href="https://github.com/artioliff/pomodoro/" target="_blank" rel="noopener noreferrer"
+                          >Código</a
+                        >
+                        <a href="https://artioliff.github.io/pomodoro/" target="_blank" rel="noopener noreferrer"
+                          >Online</a
+                        >
+                      </div>
+                    </article>
+
+                    <article class="creative-project">
+                      <h4>Dashboard Financeiro 2.0</h4>
+                      <p>KPIs, gráficos, transações e exportação.</p>
+                      <div class="creative-badges">
+                        <span class="progress">Em andamento</span>
+                      </div>
+                    </article>
+
+                    <article class="creative-project">
+                      <h4>Mini E-commerce</h4>
+                      <p>Listagem, carrinho e armazenamento local.</p>
+                      <div class="creative-badges">
+                        <span class="planned">Planejado</span>
+                      </div>
+                    </article>
+
+                    <article class="creative-project">
+                      <h4>Dashboard de Estudos (React)</h4>
+                      <p>Acompanhar evolução diária do plano de estudos.</p>
+                      <div class="creative-badges">
+                        <span class="planned">Planejado</span>
+                      </div>
+                    </article>
+
+                    <article class="creative-project">
+                      <h4>Portfólio em Next.js</h4>
+                      <p>Versão avançada com rotas, SEO e deploy.</p>
+                      <div class="creative-badges">
+                        <span class="planned">Planejado</span>
+                      </div>
+                    </article>
+                  </div>
+                </section>
+
+                <section class="creative-section" id="c-formacao">
+                  <div class="creative-section-head">
+                    <h3>Formação & Cursos</h3>
+                    <div class="creative-line"></div>
+                  </div>
+
+                  <div class="creative-edu">
+                    <article class="creative-edu-item">
+                      <h4>Formação Acadêmica</h4>
+                      <p><strong>Bacharelado em Sistemas de Informação</strong> (em andamento)</p>
+                    </article>
+
+                    <article class="creative-edu-item">
+                      <h4>Formação Profissional</h4>
+                      <p>Experiência prática contínua desde 2014 com sistemas e integrações.</p>
+                    </article>
+
+                    <article class="creative-edu-item">
+                      <h4>Especialização em Front-End (2025)</h4>
+                      <p>Trilha Autodidata com foco em HTML, CSS, JS, React, Next e TypeScript.</p>
+                    </article>
+                  </div>
+                </section>
+
+                <section class="creative-section" id="c-contato">
+                  <div class="creative-section-head">
+                    <h3>Contato</h3>
+                    <div class="creative-line"></div>
+                  </div>
+
+                  <p>Aberto para oportunidades como <strong>Front-End Developer</strong> remoto ou presencial.</p>
+
+                  <div class="creative-contact-cards">
+                    <a class="creative-contact-card" href="mailto:felipeartiolidefreitas@gmail.com">
+                      <div class="label">Email</div>
+                      <div class="value">felipeartiolidefreitas@gmail.com</div>
+                    </a>
+
+                    <a
+                      class="creative-contact-card"
+                      href="https://linkedin.com/in/artioliff"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <div class="label">LinkedIn</div>
+                      <div class="value">linkedin.com/in/artioliff</div>
+                    </a>
+
+                    <a
+                      class="creative-contact-card"
+                      href="https://github.com/artioliff"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <div class="label">GitHub</div>
+                      <div class="value">github.com/artioliff</div>
+                    </a>
+
+                    <a class="creative-contact-card" href="#" target="_blank" rel="noopener noreferrer">
+                      <div class="label">WhatsApp</div>
+                      <div class="value">+55 (14) 99719-7118</div>
+                    </a>
+                  </div>
+                </section>
+
+                <footer class="creative-footer">
+                  <span>© <span id="year2"></span> Felipe Artioli</span>
+                  <span class="dot">•</span>
+                  <span>Creative layout (CSS puro)</span>
+                </footer>
+              </div>
+          </section>
         </div>
       </div>
-    </section>
+    </div>
 
-    <!-- RODAPÉ -->
-    <footer class="footer">
-      <p>© <span id="year"></span> Felipe Artioli · Front-End Developer</p>
-    </footer>
-
-  </div>
-
-  <!-- Na Semana 3 vamos usar JavaScript aqui -->
-  <script>
-    // Só um detalhe simples: atualizar o ano automaticamente
-    const yearSpan = document.getElementById("year");
-    if (yearSpan) {
-      yearSpan.textContent = new Date().getFullYear();
-    }
-
-    function setTheme(theme) {
-        const link = document.getElementById("themeStylesheet");
-
-        if (theme === "dark")      link.href = "styles-dark.css";
-        if (theme === "light")     link.href = "styles-light.css";
-        if (theme === "creative")  link.href = "styles-creative.css";
-
-        // Salva o tema escolhido
-        localStorage.setItem("theme", theme);
-    }
-
-    // Carrega o último tema usado
-    const savedTheme = localStorage.getItem("theme");
-    if (savedTheme) {
-        document.getElementById("themeStylesheet").href = `styles-${savedTheme}.css`;
-    }
-  </script>
-</body>
+    <script src="js/script.js"></script>
+  </body>
 </html>
+
+
+
+
